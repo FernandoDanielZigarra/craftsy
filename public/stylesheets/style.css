@@ -1,3 +1,9 @@
+@font-face {
+    src:url("/fonts/CRENZO.ttf") format("truetype");
+    font-family: "Crenzo";
+    font-style: "normal";
+    font-weight: "normal";
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import './normalize.css';
 @import './variables.css';
