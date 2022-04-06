@@ -7,20 +7,104 @@
     <title>Craftsy | Registro</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body>
+<body class="index">
     <header>
-        <a href="/"><img class="header__logo" src="/images/logo.png" alt=""></a>
+        <div class="header__logo">
+            <a href="/"><a href=""><img src="/images/logo.png" alt=""></a></a>
+        </div>
+
         <nav class="header__menu">
             <ul class="header__menu__sitio">
                 <li><a href="">Smartphone</a></li>
-                <li><a href="">Tablets</a></li>
+                <li><a href="">Tables</a></li>
                 <li><a href="">Computadoras</a></li>
             </ul>
             <ul class="header__menu__usuarios">
-                <li><a href="/register">Register</a></li>
+                <li><a href="/register">Registro</a></li>
                 <li><a href="/login">Login</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <div>
+            <h1>bienvenido</h1>
+            <form action="">
+                <div class="form-box">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribir tu nombre">
+                    <span>Obligatorio</span>
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Escribir tu email">
+                    <span>Obligatorio</span>
+                </div>
+                <div class="form-box">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Escribir tu password">
+                    <span>Obligatorio</span>
+                </div>
+                <div class="form-box">
+                    <h4>País de nacimiento</h4>
+                    <select name="pais" id="pais">
+                        <option value="" hidden selected>Por Favor elegí uno...</option>
+                        <option value="ar">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="uy">Uruguay</option>
+                    </select>
+                    <div>
+                    <span>Obligatorio</span>
+                </div>
+            <div>
+                <h4>Género</h4>
+                <div>
+                    <input type="radio" name="genero" id="masculino" value="m">
+                    <label for="masculino">masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="genero" id="femenino" value="f">
+                    <label for="femenino">Femenino</label>
+                </div>
+                <div>
+                    <input type="radio" name="genero" id="nodice" value="n">
+                    <label for="nodice">Prefiero no decirlo</label>
+                </div>
+            </div>
+            <div>
+                <h4>Hobbies</h4>
+                <div>
+                    <input type="checkbox" name="hobbies" id="guitarra" value="g">
+                    <label for="guitarra">Guitarra</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" id="futbol" value="f">
+                    <label for="futbol">Fútbol</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" id="tenis" value="t">
+                    <label for="tenis">Tenis</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" id="programacion" value="p">
+                    <label for="programacion">Programación</label>
+                </div>
+                <div>
+                    <h4>Dejános tu comentarios</h4>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" style="resize:none;"></textarea>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos" >Términos y condiciones</label>
+                </div>
+                <div>
+                    <button type="submit">Registrarme</button>
+                    <button type="button">Cancelar</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
